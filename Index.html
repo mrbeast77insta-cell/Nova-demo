@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Demo Project</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #101827, #273c75);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 25px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 10px 40px #0005;
+    }
+
+    h1 {
+      color: #70e1ff;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    button {
+      background: #70e1ff;
+      color: #101827;
+      border: none;
+      padding: 13px 25px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 22px;
+      color: #a8ffb0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>🚀 My First Project</h1>
+    <p>Welcome to my demo website!
+      Click the button to see the magic.</p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "🎉 Congratulations! Your code is working!";
+    }
+  </script>
+</body>
+</html>
